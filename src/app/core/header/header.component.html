@@ -1,0 +1,18 @@
+<header>
+    <nav>
+        <ul>
+            <li><a [ngClass]="inHome == true ? 'active': ''" routerLink="/home" (click)="homeClicked()">Home</a></li>
+            <li><a [ngClass]="inAboutMe == true ? 'active': ''" routerLink="/cv/aboutMe"
+                    (click)="aboutMeClicked()">About Me</a></li>
+            <li><a [ngClass]="inEducation == true ? 'active': ''" [routerLink]="['/cv/education']"
+                    [queryParams]="{page:'1'}" (click)="educationClicked()">Education</a></li>
+            <li><a [ngClass]="inProjects == true ? 'active': ''" routerLink="/cv/projects"
+                    (click)="projectClicked()">Projects</a></li>
+
+            <div class="language">
+                <button type="button" id="en" [ngClass]="language == 'en' ? 'active' : '' " (click)="enClicked()">EN</button>
+                <button type="button" id="bg" [ngClass]="language == 'bg' ? 'active' : '' " (click)="bgClicked()">BG</button>
+            </div>
+        </ul>
+    </nav>
+</header>

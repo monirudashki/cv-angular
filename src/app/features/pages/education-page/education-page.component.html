@@ -1,0 +1,16 @@
+<h2>
+        My Education
+</h2>
+
+<div class="education-container">
+    <div class="left-button">
+            <button class="previous-next" type="button" [disabled]="page == 1" (click)="pageDownHandler()"><</button>
+    </div>
+    <div class="center">
+            <img class="img" src="{{certificate}}" alt="">
+            <p>{{name}}</p>
+    </div>
+    <div class="right-button">
+            <button class="previous-next" type="button" [disabled]="page == lastPage" (click)="pageUpHandler()">></button>
+    </div>
+</div>

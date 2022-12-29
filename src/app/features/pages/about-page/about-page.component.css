@@ -1,0 +1,56 @@
+.about-container {
+    display: block;
+    width: 50%;
+    height: 80%;
+    position: absolute;
+    top: 11%;
+    right: 6%;
+    background: rgba(0, 0, 0, 0.73);
+    border-radius: 10px;
+}
+
+.picture-info {
+    display: inline-flex;
+}
+
+.picture {
+    width: 380px;
+    height: 408px;
+}
+
+.picture img {
+    width: 80%;
+    height: 80%;
+    margin-top: 10%;
+    margin-left: 10%;
+}
+
+.info {
+    display: inline-block;
+    width: 310px;
+    height: 397px;
+    margin-top: 16px;
+}
+
+.info p {
+    font-size: 20px;
+    text-align:left;
+    border-radius: 5px;
+    background-color: white;
+}
+
+.programing {
+    width: 92.7%;
+    height: 150px;
+    margin-left: 3.8%;
+}
+
+.one {
+    text-align: center;
+}
+
+.programing p {
+    font-size: 20px;
+    border-radius: 5px;
+    background-color: white;
+}
