@@ -29,6 +29,8 @@ h2 {
     width: 80%;
     height: 90%;
 }
+
+
 .center p {
     color: white;
     text-align: center;
@@ -37,11 +39,11 @@ h2 {
 .left-button {
     width: 20px;
     height: 20px;
-    float: left;
     position: fixed;
     margin-top: 16%;
     margin-left: 2.5%;
 }
+
 
 .education-container button:hover {
     background-color: #F8DC3D;
@@ -60,12 +62,63 @@ h2 {
     border-radius: 90%;
 }
 
-@media all and (max-width: 350px) {
+@media all and (max-width: 480px) {
     h2 {
-      text-align: center;
-      margin-left: 3%;
-      font-size: 20px;
+        text-align: center;
+        margin-left: 0;
+        margin-top: 20px;
+        font-size: 10px;
     }
 
-    
+    .education-container {
+        width: 74%;
+        margin-left: 13%;
+        height: 65%;
+    }
+
+    .left-button {
+        display: flex;
+        width: 15%;
+        height: 15px;
+        float: none;
+        position: relative;
+        margin-top: 70%;
+        margin-left: 5px;
+    }
+
+    .center {
+        display: block;
+        width: 85%;
+        height: 80%;
+        margin-top: 15%;
+        margin-left: 0%;
+    }
+
+    .center img {
+        justify-content: center;
+        width: 100%;
+        height: 90%;
+        margin-top: 0%;
+        margin-left: 0%;
+    }
+
+    .center p {
+        display: block;
+        text-align: center;
+        font-size: 7px;
+        color: white;
+    }
+
+    .right-button {
+        display: flex;
+        width: 15%;
+        height: 15px;
+        margin-top: 70%;
+        margin-left: 2%;
+    }
+
+    .previous-next {
+        font-size: 5px;
+        border-radius: 90%;
+    }
 }

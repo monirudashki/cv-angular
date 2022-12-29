@@ -66,22 +66,22 @@ li a:hover {
     background-color: #F8DC3D;
 }
 
-@media all and (max-width: 350px) {
+@media all and (max-width: 480px) {
     a {
-        font-size: 10px;
+        font-size: 4px;
         padding: 15px 10px;
     }
 
     #en {
         width: 40%;
-        height: 20px;
-        font-size: 5px;
+        height: 15px;
+        font-size: 4px;
     }
 
     #bg {
         width: 40%;
-        height: 20px;
-        font-size: 5px;
+        height: 15px;
+        font-size: 4px;
     }
 
     .language {

@@ -35,9 +35,10 @@
 }
 
 .anchor {
-    width: 73%;
-    text-align: center;
-    font-size: 14px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-size: 9px;
     border-radius: 10px;
     color: white;
     background: rgba(0, 0, 0, 0.50);
@@ -47,21 +48,28 @@
     background-color: #F8DC3D;
 }
 
-@media all and (max-width: 350px) {
+@media all and (max-width: 480px) {
     .projects-container {
         width: 90%;
-        height: 70%;
+        height:60%;
         right: 4.8%;
+        margin-top: 14%;
+    }
+
+    .project {
+        margin-top: 10px;
+        height: 45%;
     }
     
     .inside {
         width: 95%;
+        height: 60%;
     }
     .inside p {
-        font-size: 7px;
+        font-size: 5px;
     }
 
     .anchor {
-        font-size: 6px;
+        font-size: 4px;
     }
 }

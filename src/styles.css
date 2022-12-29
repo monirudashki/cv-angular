@@ -10,7 +10,7 @@ body {
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-@media all and (max-width: 350px) {
+@media all and (max-width: 480px) {
     body {
         background-image: url('./assets/mobile-background.jpg');
     }
