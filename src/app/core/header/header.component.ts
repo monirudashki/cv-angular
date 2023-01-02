@@ -1,4 +1,9 @@
 import { Component, OnInit } from '@angular/core';
+import { select, Store } from '@ngrx/store';
+import { map, Observable, tap } from 'rxjs';
+import { homeSelector, IRootState, selectFeature } from 'src/app/+store';
+import { changeToAbout, changeToBg, changeToEducation, changeToEn, changeToHome, changeToProjects } from 'src/app/+store/actions';
+import { IPages } from '../interfaces/pagesInterfaces';
 import { LanguageService } from '../language.service';
 
 @Component({
@@ -8,53 +13,40 @@ import { LanguageService } from '../language.service';
 })
 export class HeaderComponent implements OnInit {
 
-  language: string = 'en';
+  language$ = this.languageService.currentLanguage$;
+  
+  inHome$: Observable<boolean> = this.store.select(global => global.currentPage.homeActive);
+  inAboutMe$: Observable<boolean> = this.store.select(global => global.currentPage.aboutActive);
+  inEducation$: Observable<boolean> = this.store.select(global => global.currentPage.projectsActive);
+  inProjects$: Observable<boolean> = this.store.select(global => global.currentPage.educationActive);
 
-  inAboutMe: boolean = false;
-  inHome: boolean = true;
-  inEducation: boolean = false;
-  inProjects: boolean = false;
-
-  constructor(private languageService: LanguageService) { }
+  constructor(private languageService: LanguageService , private store: Store<IRootState>
+  ) {}
 
   ngOnInit(): void {
   }
 
   bgClicked() {
-    this.languageService.changeLanguage('bg');
-    this.language = 'bg';
+    this.store.dispatch(changeToBg());
   }
 
   enClicked() {
-    this.language = 'en';
-    this.languageService.changeLanguage('en');
+    this.store.dispatch(changeToEn());
   }
 
   homeClicked() {
-    this.inAboutMe = false;
-    this.inHome = true;
-    this.inEducation = false;
-    this.inProjects = false;
+    this.store.dispatch(changeToHome());
   }
 
   aboutMeClicked() {
-    this.inAboutMe = true;
-    this.inHome = false;
-    this.inEducation = false;
-    this.inProjects = false;
+    this.store.dispatch(changeToAbout());
   }
 
   educationClicked() {
-    this.inAboutMe = false;
-    this.inHome = false;
-    this.inEducation = true;
-    this.inProjects = false;
+    this.store.dispatch(changeToProjects());
   }
 
   projectClicked() {
-    this.inAboutMe = false;
-    this.inHome = false;
-    this.inEducation = false;
-    this.inProjects = true;
+    this.store.dispatch(changeToEducation());
   }
 }

@@ -5,7 +5,7 @@
        </div>
 
        <div class="info">
-          <ng-container *ngIf="language == 'en'">
+          <ng-container *ngIf="(language$ | async) == 'en'">
               <p><strong>Name: </strong><span>Simeon Borislavov Rudashki</span></p>
               <p><strong>Birth: </strong><span>11.02.1990</span></p>
               <p> <strong>Town: </strong><span>Pleven</span></p>
@@ -13,7 +13,7 @@
               <p><strong>Previous Works:</strong> <span><br>-2006-2013 Professional football player <br>-2013-2017 Own business <br>-2018-2022 Commercial agent</span></p>
           </ng-container>
 
-          <ng-container *ngIf="language == 'bg'">
+          <ng-container *ngIf="(language$ | async) == 'bg'">
               <p><strong>Име: </strong><span>Симеон Бориславов Рудашки</span></p>
               <p><strong>Дата на Раждане: </strong><span>11.02.1990</span></p>
               <p><strong>Град: </strong><span>Плевен</span></p>
@@ -24,12 +24,12 @@
     </div>
 
     <div class="programing">
-        <p *ngIf="language == 'en'" class="one"> <strong>Programming Education and Skills:</strong> <br>
+        <p *ngIf="(language$ | async) == 'en'" class="one"> <strong>Programming Education and Skills:</strong> <br>
             I'm studying javascript language in Softuni. I have pass four steps, now i'm on five - front-end with react , my knowledge are javascript,typescript,JSON,html,css,angular,RxJS,noSQL,node.js,mongoDB <br>
             I learn quick and program with pleased.Looking for start job or experience in front-end development.
         </p>
 
-        <p *ngIf="language == 'bg'" class="one"> <strong>Обучение и умения:</strong> <br>
+        <p *ngIf="(language$ | async) == 'bg'" class="one"> <strong>Обучение и умения:</strong> <br>
             Изучавам javascript в Softuni.Преминах 4 стъпки, сега съм на 5-та front-end with react, имам познания в javascript,typescript,JSON,html,css,angular,RxJS,noSQL,node.js,mongoDB <br>
             Уча сравнително бързо и програмирам с удоволствие.Справям се добре в екип.Търся възможност за работа на стартираща позиция или стаж.
         </p>

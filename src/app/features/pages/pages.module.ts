@@ -6,6 +6,7 @@ import { ProjectsPageComponent } from './projects-page/projects-page.component';
 import { pagesRoutingModule } from './pages-router.module';
 import { AppRoutingModule } from 'src/app/app-routing.module';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { StoreModule } from '@ngrx/store';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,7 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
   ],
   imports: [
     CommonModule,
-    pagesRoutingModule,
+    pagesRoutingModule, 
   ]
 })
 export class PagesModule { }

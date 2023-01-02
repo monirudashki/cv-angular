@@ -8,12 +8,10 @@ import { LanguageService } from 'src/app/core/language.service';
   templateUrl: './about-page.component.html',
   styleUrls: ['./about-page.component.css']
 })
-export class AboutPageComponent implements OnInit , OnDestroy {
+export class AboutPageComponent implements OnInit{
   
   title: string = 'About Me';
-  language: string = 'en'
-
-  subs!: Subscription
+  language$ = this.languageService.currentLanguage$;
 
   constructor(
     private titleService: Title,
@@ -21,13 +19,5 @@ export class AboutPageComponent implements OnInit , OnDestroy {
 
   ngOnInit(): void {
     this.titleService.setTitle(this.title);
-
-    this.subs = this.languageService.languageEmitter.subscribe((language) => {
-      this.language = language;
-    })
-  }
-
-  ngOnDestroy(): void {
-    this.subs.unsubscribe();
   }
 }
