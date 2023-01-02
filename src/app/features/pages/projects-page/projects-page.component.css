@@ -48,6 +48,37 @@
     background-color: #F8DC3D;
 }
 
+@media all and (min-width: 480px) and (max-width: 800px) {
+    .projects-container {
+        width: 90%;
+        height:60%;
+        right: 4.8%;
+        margin-top: 14%;
+    }
+
+    .project {
+        margin-top: 10px;
+        height: 45%;
+    }
+    
+    .inside {
+        width: 95%;
+        height: 60%;
+    }
+    .inside p {
+        font-size: 10px;
+    }
+
+    .inside img {
+        width: 100%;
+        height: 80%;  
+    }
+
+    .anchor {
+        font-size: 10px;
+    }
+}
+
 @media all and (max-width: 480px) {
     .projects-container {
         width: 90%;

@@ -55,6 +55,56 @@
     background-color: white;
 }
 
+@media all and (min-width: 480px) and (max-width: 800px) {
+    .about-container {
+        display: inline-block;
+        width: 80%;
+        height: 80%;
+        margin-right: 12.5px;
+    }
+    
+    .picture {
+        width: 300px;
+        height: 400px;
+    }
+
+    .picture img {
+        width: 89%;
+    }
+
+    .info {
+        display: inline-block;
+        width: 250px;
+        height: 400px;
+        margin-top: 0;
+        margin-left: 5px;
+    }
+
+    .info p {
+        font-size: 18px;
+        text-align:left;
+        border-radius: 5px;
+        background-color: white;
+    }
+
+    .programing {
+        display: block;
+        width: 95%;
+        height: 220px;
+        margin-left: 2.5%;
+    }
+    
+    .one {
+        text-align: center;
+    }
+    
+    .programing p {
+        font-size: 15px;
+        border-radius: 5px;
+        background-color: white;
+    }
+}
+
 @media all and (max-width: 480px) {
     .about-container {
         display: inline-block;

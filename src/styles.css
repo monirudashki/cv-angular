@@ -15,3 +15,9 @@ body {
         background-image: url('./assets/mobile-background.jpg');
     }
 }
+
+@media all and (min-width: 480px) and (max-width: 800px)  {
+    body {
+        background-image: url('./assets/mobile-background.jpg');
+    }
+}

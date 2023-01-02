@@ -1,6 +1,6 @@
 import { Component, OnDestroy, OnInit, ɵisSubscribable } from '@angular/core';
 import { Title } from '@angular/platform-browser';
-import { Subscription, tap } from 'rxjs';
+import { Observable, Subscription, tap } from 'rxjs';
 import { LanguageService } from 'src/app/core/language.service';
 
 @Component({
@@ -11,7 +11,7 @@ import { LanguageService } from 'src/app/core/language.service';
 export class AboutPageComponent implements OnInit , OnDestroy {
   
   title: string = 'About Me';
-  language: string = 'en';
+  language: string = 'en'
 
   subs!: Subscription
 

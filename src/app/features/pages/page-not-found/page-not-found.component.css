@@ -55,3 +55,65 @@
   a:hover {
     text-decoration: underline;
   }
+
+  @media all and (max-width: 480px) {
+    .mainbox {
+      margin-top: 0;
+    }
+
+    .err {
+      font-size: 25px;
+      left: 30%;
+      top: 25%
+    }
+
+    .msg {
+      font-size: 7px;
+      left: 3%;
+      top: 40%;
+      width: 75%;
+    }
+
+    .far {
+      font-size: 25px;
+      left: 38%;
+      top: 25%
+    }
+    
+     .err2 {
+      font-size: 25px;
+      left: 47%;
+      top: 25%
+      }
+  }
+
+  @media all and (min-width: 480px) and (max-width: 800px) {
+
+    .mainbox {
+      margin-top: 0;
+    }
+    .err {
+      font-size: 40px;
+      left: 30%;
+      top: 25%
+    }
+
+    .msg {
+      font-size: 20px;
+      left: 3%;
+      top: 40%;
+      width: 75%;
+    }
+
+    .far {
+      font-size: 40px;
+      left: 38%;
+      top: 25%
+    }
+    
+     .err2 {
+      font-size: 40px;
+      left: 47%;
+      top: 25%
+      }
+  }
