@@ -1,7 +1,8 @@
 <header>
     <nav>
-        <ul>
-            <li><a [ngClass]="(inHome$ | async)== true ? 'active': ''" routerLink="/home" (click)="homeClicked()">Home</a></li>
+        <ul role="list">
+            <li><a [ngClass]="(inHome$ | async)== true ? 'active': ''" routerLink="/home"
+                    (click)="homeClicked()">Home</a></li>
             <li><a [ngClass]="(inAboutMe$ | async) == true ? 'active': ''" routerLink="/cv/aboutMe"
                     (click)="aboutMeClicked()">About Me</a></li>
             <li><a [ngClass]="(inEducation$ | async) == true ? 'active': ''" [routerLink]="['/cv/education']"
@@ -9,10 +10,11 @@
             <li><a [ngClass]="(inProjects$ | async) == true ? 'active': ''" routerLink="/cv/projects"
                     (click)="projectClicked()">Projects</a></li>
 
-            <div class="language">
-                <button type="button" id="en" [ngClass]="(language$ | async) == 'en' ? 'active' : '' " (click)="enClicked()">EN</button>
-                <button type="button" id="bg" [ngClass]="(language$ | async) == 'bg' ? 'active' : '' " (click)="bgClicked()">BG</button>
-            </div>
         </ul>
+        <button type="button" id="en" [ngClass]="(language$ | async) == 'en' ? 'active' : '' "
+            (click)="enClicked()">EN</button>
+        <button type="button" id="bg" [ngClass]="(language$ | async) == 'bg' ? 'active' : '' "
+            (click)="bgClicked()">BG</button>
     </nav>
+
 </header>
