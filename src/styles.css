@@ -84,17 +84,12 @@ body {
     background-image: url(./assets/background-image.png);
     background-position: center;
     background-size: cover;
+    object-fit: cover;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-@media all and (max-width: 480px) {
-    body {
-        background-image: url('./assets/mobile-background.jpg');
-    }
-}
-
-@media all and (min-width: 480px) and (max-width: 800px)  {
-    body {
-        background-image: url('./assets/mobile-background.jpg');
-    }
+@media all and (max-width: 1250px) {
+  body {
+    background-image: url(./assets/javascirpt-mobile.jpg);
+  }
 }

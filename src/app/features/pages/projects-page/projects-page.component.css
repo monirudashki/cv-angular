@@ -6,15 +6,11 @@ html {
     box-sizing: inherit;
 }
 
-h1 {
-    margin-top: 2%;
-    text-align: center;
-}
-
 .projects-container {
     margin: auto;
     margin-left: 42%;
     margin-right: 3%;
+    margin-top: 3%;
     width: 55%;
     height: 70%;
     border-radius: 10px;
@@ -29,6 +25,7 @@ h1 {
     margin-left: 1%;
     margin-bottom: 1%;
     background: rgba(0, 0, 0, 0.73);
+    overflow: hidden;
 }
 
 .project img {
@@ -63,58 +60,72 @@ h1 {
     background-color: #F8DC3D;
 }
 
-
-@media all and (min-width: 480px) and (max-width: 800px) {
-
+@media all and (max-width: 1280px) {
     .projects-container {
-        margin: auto;
-        margin-left: 8%;
-        width: 90%;
-        height: 70%;
-    }
-
-    .project {
-        margin-top: 10px;
-        width: 45%;
-        height: 45%;
-    }
-    
-    .project img {
-        width: 95%;
-        height: 60%;
+        margin: unset;
+        width: 80%;
+        height: 80vh;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50% , -50%);
     }
     .project p {
-        font-size: 9px;
+        font-size: 12px;
     }
 
     .anchor {
-        font-size: 9px;
+        font-size: 8px;
+    }
+}
+
+@media all and (max-width: 970px) {
+    .project p {
+        font-size: 10px;
+    }
+
+    .anchor {
+        font-size: 6px;
+    }
+}
+
+@media all and (min-width: 480px) and (max-width: 800px) {
+    .project p {
+        margin: 0;
+        margin-bottom: 5px;
+        margin-top: 10px;
+        font-size: 12px;
+    }
+
+    .anchor {
+        margin: 0;
+        font-size: 12px;
     }    
 }
 
-@media all and (max-width: 480px) {
+@media all and (max-width: 650px) {
     .projects-container {
-        margin: auto;
-        margin-left: 8%;
-        width: 90%;
-        height: 70%;
+        margin-top: 50px;
     }
 
     .project {
-        margin-top: 10px;
-        width: 45%;
-        height: 45%;
+        width: 100%;
     }
-    
+
     .project img {
-        width: 95%;
-        height: 60%;
+        margin: auto;
+        padding: 0;
     }
+
     .project p {
-        font-size: 5px;
+        margin: 0;
+        margin-bottom: 5px;
+        margin-top: 10px;
+        font-size: 12px;
     }
 
     .anchor {
-        font-size: 4px;
-    }
+        margin: 0;
+        font-size: 12px;
+    } 
 }

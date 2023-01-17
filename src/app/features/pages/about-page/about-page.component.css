@@ -33,6 +33,8 @@ img {
 .grid-container .grid-item-info {
     grid-area: info;
     overflow: auto;
+    display: flex;
+    flex-direction: column;
 }
 
 .grid-item-info p {
@@ -46,6 +48,10 @@ img {
 
 .grid-container .grid-item-skills {
     grid-area: skills;
+    overflow: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     overflow: auto;
 }
 
@@ -61,6 +67,26 @@ img {
     background-color: white;
 }
 
+@media all and (max-width: 1280px) {
+    .grid-item-skills p {
+        font-size: 18px;
+    }
+
+    .grid-item-info p {
+        font-size: 1rem;
+    }
+}
+
+@media all and (max-width: 1060px) {
+    .grid-item-skills p {
+        font-size: 12px;
+    }
+
+    .grid-item-info p {
+        font-size: 12px;
+    }
+}
+
 @media all and (min-width: 480px) and (max-width: 800px) {
     .grid-container {
         margin: 5% 5%;
@@ -71,7 +97,7 @@ img {
     }
 
     .grid-item-skills p {
-        font-size: 17px;
+        font-size: 12px;
     }
 }
 
