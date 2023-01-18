@@ -60,11 +60,19 @@ html {
          transform: translate(-50% , -50%);
          width: 70%;
     }
+
+    .left-button , .right-button {
+        width: 12%;
+    }
+
+    .center {
+        width: 76%;
+    }
 }
 
-@media all and (min-width: 480px) and (max-width: 800px) and (orientation: landscape) {
+@media all and (min-width: 480px) and (max-width: 800px) {
     .center img {
-        width: 60%;
+        width: 80%;
         height: 85%;
         padding-top: 10%;
         margin-right: auto;
@@ -72,9 +80,15 @@ html {
     }
 }
 
+@media all and (min-width: 600px) and (orientation: landscape) {
+    .education-container {
+        width: 40%;
+    }
+}
+
 @media all and (max-width: 480px) {
     .center p {
-        font-size: 7px;
+        font-size: 8px;
     }
 
     .left-button button , .right-button button{

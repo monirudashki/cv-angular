@@ -57,3 +57,19 @@
         font-size: 18px;
     }
 }
+
+@media all and (max-width: 600px) and (orientation: landscape) {
+    .cv-container {
+        top: 25%;
+    }
+
+    .cv-container h1 {
+        font-size: 10px;
+    }
+}
+
+@media all and (max-height: 600px) and (orientation: landscape) {
+    .cv-container h1 {
+        font-size: 14px;
+    }
+}

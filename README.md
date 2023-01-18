@@ -1,8 +1,9 @@
-This is my CV
+This is my CV 
+
+- responsible responsible for all devices
+- deploy with heroku link: https://cv-simeon-rudashki.herokuapp.com/
 
 - Home
 - About me - information about my personality and skills of programing
 - Projects - my projects with links to github repositories
 - Education - my certificates from my education in Softuni
-
-node version 18.12.1
