@@ -1,6 +1,6 @@
-This is my CV 
+This is my CV
 
-- responsible responsible for all devices
+- responsible for all devices
 - deploy with heroku link: https://cv-simeon-rudashki.herokuapp.com/
 
 - Home
