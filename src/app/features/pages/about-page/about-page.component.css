@@ -5,16 +5,16 @@
     margin-top: 3%;
     margin-right: 3%;
     gap: 2%;
-    grid-template-columns: repeat(4 , 1fr);
+    grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(3, 1fr);
-    
-    grid-template-areas: 
-    'picture picture info info'
-    'picture picture info info'
-    'skills skills skills skills';
+
+    grid-template-areas:
+        'picture picture info info'
+        'picture picture info info'
+        'skills skills skills skills';
 }
 
-.grid-container > * {
+.grid-container>* {
     background-color: rgba(0, 0, 0, 0.73);
     border-radius: 10px;
 }
@@ -60,7 +60,7 @@ img {
 }
 
 .grid-item-skills p {
-    font-size: 1.1vw;
+    font-size: 1vw;
     margin: 2%;
     margin-top: 3%;
     border-radius: 5px;
@@ -95,7 +95,7 @@ img {
     .grid-container {
         margin: 5% 5%;
     }
-    
+
     .grid-item-info p {
         font-size: 15px;
     }
@@ -109,7 +109,7 @@ img {
     .grid-container {
         margin: 5% 5%;
     }
-    
+
     .grid-item-info p {
         font-size: 10px;
     }
