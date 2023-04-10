@@ -9,7 +9,8 @@ const pages: any = {
   'page4': ['./assets/Application-certificate.jfif', 'JS Application - June 2022'],
   'page5': ['./assets/back-end-certificate.jfif', 'JS back-end - September 2022'],
   'page6': ['./assets/angular-certificate.jfif', 'Angular - November 2022'],
-  'page7': ['./assets/html-certificate.jpg', 'HTML-CSS - January 2023']
+  'page7': ['./assets/html-certificate.jpg', 'HTML-CSS - January 2023'],
+  'page8': ['./assets/react-certificate.jpg', 'React JS - April 2023']
 }
 
 @Component({
@@ -23,7 +24,7 @@ export class EducationPageComponent implements OnInit {
   page: number = this.route.snapshot.queryParams['page'];
   certificate!: string;
   name!: string;
-  lastPage: number = 7;
+  lastPage: number = 8;
 
   constructor(
     private titleService: Title,
